@@ -1,46 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="./style.css" />
 
-  <link rel="stylesheet" href="./style.css">
+		<title>Intro component with sign up form</title>
+	</head>
 
-  <title>Intro component with sign up form</title>
+	<body>
+		<main>
+			<article id="left">
+				<h1>Learn to code by watching others</h1>
 
-</head>
+				<p>
+					See how experienced developers solve problems in real-time.
+					Watching scripted tutorials is great, but understanding how
+					developers think is invaluable.
+				</p>
+			</article>
 
-<body>
-  <main>
+			<article id="right">
+				<p id="info">
+					<span style="font-weight: bold">Try it free 7 days</span>
+					then $20/mo. thereafter
+				</p>
 
-    <article id="left">
-      <h1>Learn to code by watching others</h1>
+				<section id="inside-form">
+					<form method="post" id="fAcc" action="./thanks.html">
+						<p>
+							<input
+								type="text"
+								name="tFName"
+								id="accFName"
+								size="50"
+								maxlength="30"
+								placeholder="First Name"
+								required
+							/>
+						</p>
+						<p>
+							<input
+								type="text"
+								name="tLName"
+								id="accLName"
+								size="50"
+								maxlength="30"
+								placeholder="Last Name"
+								required
+							/>
+						</p>
+						<p>
+							<input
+								type="email"
+								name="tEmail"
+								id="accEmail"
+								size="50"
+								maxlenght="60"
+								placeholder="Email Address"
+								required
+							/>
+						</p>
+						<p>
+							<input
+								type="password"
+								name="tPassword"
+								id="accPassword"
+								size="50"
+								maxlength="16"
+								placeholder="Password"
+								required
+							/>
+						</p>
+						<p>
+							<input
+								id="submit"
+								type="submit"
+								value="CLAIM YOUR FREE TRIAL"
+							/>
+						</p>
+					</form>
 
-      <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
-        but understanding how developers think is invaluable.</p>
-
-    </article>
-
-    <article id="right">
-
-      <p id="info"><span style="font-weight: bold;">Try it free 7 days</span> then $20/mo. thereafter</p>
-
-      <section id="inside-form">
-        <form method="post" id="fAcc">
-          <p><input type="text" name="tFName" id="accFName" size="50" maxlength="30" placeholder="First Name" required></p>
-          <p><input type="text" name="tLName" id="accLName" size="50" maxlength="30" placeholder="Last Name" required></p>
-          <p><input type="email" name="tEmail" id="accEmail" size="50" maxlenght="60" placeholder="Email Address" required></p>
-          <p><input type="password" name="tPassword" id="accPassword" size="50" maxlength="16" placeholder="Password" required>
-          </p>
-          <p><input id="submit" type="submit" value="CLAIM YOUR FREE TRIAL"></p>
-        </form>
-
-      <h6>By clicking the button, you are agreeing to our <span style="color: red;">Terms and Services</span></h6>
-    </section>
-    </article>
-
-  </main>
-</body>
-
+					<h6>
+						By clicking the button, you are agreeing to our
+						<span style="color: red">Terms and Services</span>
+					</h6>
+				</section>
+			</article>
+		</main>
+	</body>
 </html>

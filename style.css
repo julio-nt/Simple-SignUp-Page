@@ -84,6 +84,37 @@ section#inside-form {
 	padding: 10px;
 }
 
+div.message {
+	background-color: white;
+	color: black;
+	border-radius: 10px;
+	width: fit-content;
+	height: fit-content;
+	padding: 10px;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	top: 30%;
+}
+
+.message h1 {
+	text-align: center;
+}
+
+#home {
+	background-color: rgb(166, 0, 199);
+	color: white;
+	border: 1px solid gray;
+	border-radius: 5px;
+	padding: 5px;
+	position: relative;
+	box-shadow: 2px 2px rgba(128, 128, 128, 0.4);
+}
+
+#home:hover {
+	background-color: rgb(217, 25, 255);
+}
+
 @media (min-width: 1280px) {
 	main {
 		max-width: 100%;
